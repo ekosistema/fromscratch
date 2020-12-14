@@ -49,7 +49,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation navbar d-flex align-self-center text-right col-md-8 navbar-expand-md collapse">
-    <button data-toggle="collapse" class="navbar-toggler align-self-start" data-target="#navcol-2" style="filter: invert(0%);margin: 0em;" aria-controls="primary-menu" aria-expanded="false"><?php echo "<img src='https://res.cloudinary.com/dvw01wakw/image/upload/v1607783223/fromscratch/bitmap-e1607459645826_lylrh8.png' width='20px' height='20px'/>";?></button>
+    <button data-toggle="collapse" class="navbar-toggler align-self-start" data-target="#navcol-2" style="filter: invert(0%);margin: 0em;" aria-controls="primary-menu" aria-expanded="false"><?php echo "<img src='https://res.cloudinary.com/dvw01wakw/image/upload/v1607783223/fromscratch/bitmap-e1607459645826_lylrh8.png' width='20' height='20' alt='menuicon'/>";?></button>
         <div class="collapse navbar-collapse text-left align-items-end flex-column pr-5" id="navcol-2">
 		<?php
 			wp_nav_menu(
@@ -59,11 +59,11 @@
 				)
 			);
 			?>
-        </div>
-    </div>
-</nav><!-- #site-navigation -->
 
-</div> <!-- row -->
+        </div>
+	</nav><!-- #site-navigation -->
+	</div>	
+
 
 
 	

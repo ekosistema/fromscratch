@@ -10,7 +10,6 @@
  */
 
 ?>
-</div> <!-- row -->
 
 
 	<footer id="colophon" class="site-footer py-5">
@@ -26,6 +25,6 @@
 </div> <!-- container -->
 
 <?php wp_footer(); ?>
-
+</div>
 </body>
 </html>
