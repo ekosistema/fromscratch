@@ -13,7 +13,7 @@
 
 
 	<footer id="colophon" class="site-footer py-5">
-		<div class="site-info align-self-center">
+		<div class="site-info align-self-center px-3">
 		<?php echo "<a href='https://creativecommons.org/licenses/by-sa/4.0/'>Algunos Derechos Reservados</a> || <a href='#'>Aviso Legal</a> || " ?>
 							<?php
 				/* translators: 1: Theme name, 2: Theme author. */
@@ -23,8 +23,8 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 </div> <!-- container -->
-
-<?php wp_footer(); ?>
 </div>
+<?php wp_footer(); ?>
+
 </body>
 </html>
