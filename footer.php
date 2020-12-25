@@ -14,7 +14,7 @@
 
 	<footer id="colophon" class="site-footer py-5">
 		<div class="site-info align-self-center px-3">
-		<?php echo "<a href='https://creativecommons.org/licenses/by-sa/4.0/'>Algunos Derechos Reservados</a> || <a href='#'>Aviso Legal</a> || " ?>
+		<?php echo "<a href='https://creativecommons.org/licenses/by-sa/4.0/'>Algunos Derechos Reservados</a> || <a href='https://marcosmarti.org/politica-privacidad-aviso-legal/'>Aviso Legal</a> || " ?>
 							<?php
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( '%1$s by %2$s.', 'fromscratch' ), 'fromscratch', '<a href="https://marcosmarti.org">Marcos Martí</a>' );
