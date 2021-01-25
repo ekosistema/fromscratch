@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main col-md-8">
+	<main id="primary" class="site-main col-md-8 px-3">
 
 		<?php
 		while ( have_posts() ) :

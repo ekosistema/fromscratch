@@ -120,6 +120,7 @@ p {
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  font-size: 1.08rem;
 }
 
 /* Sections

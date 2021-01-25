@@ -5,7 +5,7 @@ Template Name: Full-Width
 get_header();
 ?>
 
-	<main id="primary" class="site-main col-md-12">
+	<main id="primary" class="site-main col-md-12 px-3">
 
 		<?php
 		while ( have_posts() ) :

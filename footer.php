@@ -12,7 +12,7 @@
 ?>
 
 
-	<footer id="colophon" class="site-footer py-5">
+	<footer id="colophon" class="site-footer py-5 px-3">
 		<div class="site-info align-self-center px-3">
 		<?php echo "<a href='https://creativecommons.org/licenses/by-sa/4.0/'>Algunos Derechos Reservados</a> || <a href='https://marcosmarti.org/politica-privacidad-aviso-legal/'>Aviso Legal</a> || " ?>
 							<?php
