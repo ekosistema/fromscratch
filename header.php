@@ -67,7 +67,7 @@
 	<?php 
 	if ( is_front_page() ) :
 		?>
-		<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+		<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" class="img-fluid aligncenter"/>
 		<div id="content" class="container pt-5">
 		<div class="row">
 		<?php
