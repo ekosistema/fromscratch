@@ -1,7 +1,10 @@
 <?php
-/*
-Template Name: Full-Width
-*/
+/** 
+ * Template Name: Full-Width
+ *
+ * @package fromscratch
+ */
+
 get_header();
 ?>
 

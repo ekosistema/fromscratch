@@ -1,15 +1,15 @@
 <?php
 /**
- * fromscratch functions and definitions
+ * Fromscratch functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package fromscratch
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'FROMSCRATCH_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( 'FROMSCRATCH_VERSION', '1.0.0' );
 }
 
 if ( ! function_exists( 'fromscratch_setup' ) ) :
@@ -140,33 +140,43 @@ add_action( 'widgets_init', 'fromscratch_widgets_init' );
  * Enqueue scripts and styles.
  */
 
- // Include Bootstrap CSS
-function bootstrap_css() {
-	wp_enqueue_style( 'bootstrap_css', 
-  					get_stylesheet_directory_uri() . '/css/bootstrap.min.css', 
-  					array(), 
-  					'4.5.3'
-  					); 
+/** 
+ * Include Bootstrap CSS 
+ */ 
+function fromscratch_bootstrap_css() {
+	wp_enqueue_style(
+		'fromscratch_bootstrap_css', 
+		get_stylesheet_directory_uri() . '/css/bootstrap.min.css', 
+		array(), 
+		'4.5.3'
+	); 
 }
-add_action( 'wp_enqueue_scripts', 'bootstrap_css');
+add_action( 'wp_enqueue_scripts', 'fromscratch_bootstrap_css' );
 
-// Include Bootstrap JS
-function bootstrap_js() {
-	wp_enqueue_script( 'bootstrap_js', 
-  					get_stylesheet_directory_uri() . '/js/bootstrap.min.js', 
-  					array('jquery'), 
-  					'4.5.3', 
-  					true); 
+/** 
+ * Include Bootstrap JS 
+ */
+function fromscratch_bootstrap_js() {
+	wp_enqueue_script(
+		'fromscratch_bootstrap_js', 
+		get_stylesheet_directory_uri() . '/js/bootstrap.min.js', 
+		array( 'jquery' ), 
+		'4.5.3', 
+		true
+	); 
 }
-add_action( 'wp_enqueue_scripts', 'bootstrap_js');
+add_action( 'wp_enqueue_scripts', 'fromscratch_bootstrap_js' );
 
+/** 
+ * Fromscratch scripts
+ */
 function fromscratch_scripts() {
 
-	wp_enqueue_style( 'fromscratch-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'fromscratch-style', get_stylesheet_uri(), array(), FROMSCRATCH_VERSION );
 	
 	wp_style_add_data( 'fromscratch-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'fromscratch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fromscratch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), FROMSCRATCH_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -4,7 +4,7 @@
  *
  * You can add an optional custom header image to header.php like so ...
  *
-	<?php the_header_image_tag(); ?>
+ * <?php the_header_image_tag(); ?>
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
@@ -24,11 +24,10 @@ function fromscratch_custom_header_setup() {
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
-				'flex-width'		 => true,
+				'flex-width'         => true,
 				'width'              => 1000,
-				'flex-height'		 => true,	
+				'flex-height'        => true,
 				'height'             => 250,
-				//'flex-height'        => true,
 				'wp-head-callback'   => 'fromscratch_header_style',
 			)
 		)

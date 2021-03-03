@@ -49,8 +49,8 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation navbar d-flex align-self-center text-right col-md-8 navbar-expand-md collapse">
-    <button data-toggle="collapse" class="navbar-toggler align-self-start" data-target="#navcol-2" style="filter: invert(0%);margin: 0em;" aria-controls="primary-menu" aria-expanded="false"><?php echo "<img src='https://res.cloudinary.com/dvw01wakw/image/upload/v1607783223/fromscratch/bitmap-e1607459645826_lylrh8.png' width='20' height='20' alt='menuicon'/>";?></button>
-        <div class="collapse navbar-collapse text-left align-items-end flex-column pr-5" id="navcol-2">
+	<button data-toggle="collapse" class="navbar-toggler align-self-start" data-target="#navcol-2" style="filter: invert(0%);margin: 0em;" aria-controls="primary-menu" aria-expanded="false"><?php echo "<img src='https://res.cloudinary.com/dvw01wakw/image/upload/v1607783223/fromscratch/bitmap-e1607459645826_lylrh8.png' width='20' height='20' alt='menuicon'/>"; ?></button>
+		<div class="collapse navbar-collapse text-left align-items-end flex-column pr-5" id="navcol-2">
 		<?php
 			wp_nav_menu(
 				array(
@@ -60,30 +60,21 @@
 			);
 			?>
 
-        </div>
+		</div>
 	</nav><!-- #site-navigation -->
 	</div>	
-
-
-
-	
 </header><!-- #masthead -->
-
 	<?php 
-		if ( is_front_page() ) :
-	?>
-
-<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" class="img-fluid aligncenter"/>
-<div id="content" class="container pt-5">
-<div class="row">
-
-	<?php
+	if ( is_front_page() ) :
+		?>
+		<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+		<div id="content" class="container pt-5">
+		<div class="row">
+		<?php
 		else :
-	?>
-
+			?>
 <div id="content" class="container">
 <div class="row">
-
 	<?php endif; ?>
 
 

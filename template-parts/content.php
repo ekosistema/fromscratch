@@ -21,10 +21,8 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			
-		<?php endif; ?>
+	<?php endif; ?>
 	</header><!-- .entry-header -->
-
 	<div class="entry-content">
 		<?php
 		the_content(
